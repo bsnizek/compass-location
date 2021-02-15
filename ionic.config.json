@@ -1,0 +1,7 @@
+{
+  "name": "compass-location",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
