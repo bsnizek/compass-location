@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.metascapes.compasslocation",
   "appName": "compass-location",
   "bundledWebRuntime": false,
   "npmClient": "npm",

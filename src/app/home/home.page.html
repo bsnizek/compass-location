@@ -13,8 +13,27 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <div #mapRef id="mmap" class="map">&nbsp;</div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Vars</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <i>Alpha: {{alpha}}</i><br/>
+      <i>Geoloc: {{position?.coords.latitude}} | {{position?.coords.longitude}}</i><br/>
+      <i>Map: {{map}}</i>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-button size="small" (click)="getOrientation()">Get Orientation</ion-button>
+    <ion-button size="small" (click)="getGeolocation()">Get Geolocation</ion-button>
+    <ion-button size="small" (click)="watchGeolocation()">Watch Geolocation</ion-button>
+    <ion-button size="small" (click)="sM()">sM</ion-button>
+  </ion-card>
 </ion-content>

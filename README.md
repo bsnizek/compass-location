@@ -1,5 +1,9 @@
-##Getting project ready for XCode
+#compass-location
 
+A little project combining compass and location services.
+We use this to test on different devices.
+
+##Getting project ready for XCode
 ```
 npm install @capacitor/cli @capacitor/core
 npx cap init
