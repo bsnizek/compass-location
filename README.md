@@ -10,6 +10,9 @@ npx cap init
 npx cap add ios
 ionic build
 ```
+
+## Deployment
+
 ```
 ionic capacitor copy ios
 ionic capacitor open ios

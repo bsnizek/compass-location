@@ -25,8 +25,28 @@
     <ion-card-header>Velkommen</ion-card-header>
     <ion-card-content>
       Vi skal lige have et par tilladelser før vi kan gå igang.
-      <ion-button size="small" (click)="requestMotionPermission()">requestMotionPermission()</ion-button>
+      <ion-button size="small" (click)="requestMotionPermission()">Kompas</ion-button>
+      <ion-button size="small" (click)="getGeolocation()">GPS</ion-button>
     </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-button size="small" (click)="watchGeolocation()">Watch Geolocation</ion-button>
+    <b>{{isCompassPermissionGranted()}}</b>
+    <h3 *ngIf="isCompassPermissionGranted()">Orientation granted.</h3>
+    <ion-button size="small" (click)="subscribeToOrientation()">
+      Add Orientation Listener
+    </ion-button>
+
+<!--    <ion-button size="small" (click)="sM()">Update Map Size</ion-button>-->
+
+    <ion-button size="small" (click)="locationandorientationservice.suspendOrientation()">
+      suspend
+    </ion-button>
+
+    <ion-button size="small" (click)="locationandorientationservice.resumeOrientation()">
+      resume
+    </ion-button>
   </ion-card>
 
   <ion-card>

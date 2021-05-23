@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>secondpage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button size="small" (click)="orientationService.unsubscribeOrientation()">
+    suspend
+  </ion-button>
+
+  <ion-button size="small" (click)="orientationService.resumeOrientation()">
+    resume via service
+  </ion-button>
+
+  <h1>{{alpha}}</h1>
+
+</ion-content>
